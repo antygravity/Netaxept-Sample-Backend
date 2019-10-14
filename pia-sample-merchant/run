@@ -1,0 +1,6 @@
+#export "spring.profiles.active"=default
+export NETAXEPT_HOST=test.epayment.nets.eu
+export NETAXEPT_PORT=443
+
+echo Starting Pia merchant backend demo
+java -jar -Dspring.profiles.active=default  target/pia-merchant-service-1.4.0.jar
